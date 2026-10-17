@@ -1,0 +1,22 @@
+Install Python 3.12 or higher, then just run the .bat as admin.
+
+HOW TO GET YOUR DISCORD TOKEN (automatic):
+
+1. Make sure you are logged into Discord on this PC (app or browser closed is fine,
+   but you must have logged in at least once).
+2. Run: python GetToken.py
+3. If a valid token is found, it is printed on screen and saved to token.txt.
+4. The tool reads token.txt automatically. If no token is found, it will ask you
+   to paste your token manually when it starts.
+
+MANUAL TOKEN (if GetToken.py finds nothing):
+
+1. Open Discord in Chrome/Edge and press Ctrl+Shift+I (DevTools).
+2. Go to the Console tab and paste:
+   copy(JSON.parse(localStorage.getItem('token')))
+   (only on your own account, never share this with anyone)
+3. Paste the token when the tool asks for it.
+
+For the other one you have to put the token inside
+
+main.py
